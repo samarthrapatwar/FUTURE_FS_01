@@ -237,7 +237,9 @@ article .icon {
   border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1:hover,
+
+
+.btn-color-1,
 .btn-color-2:hover {
   cursor: pointer;
   background: rgb(53, 53, 53);
@@ -248,13 +250,9 @@ article .icon {
   background: rgb(0, 0, 0);
 }
 
-.btn-color-2 {
-  background: none;
-}
 
-.btn-color-2:hover {
-  border-color: white;
-}
+
+
 
 
 /*         ABOUT           */
