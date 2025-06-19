@@ -177,19 +177,36 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:samarthrapatwar2005@gmail.com">samarthrapatwar2005@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/samarth-rapatwar-677069303" target="_blank">www.linkedin.com/in/samarth-rapatwar-677069303</a></p>
-      </div>
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+
+  <!-- Contact Info (Email + LinkedIn) -->
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
+      <p><a href="mailto:samarthrapatwar2005@gmail.com">samarthrapatwar2005@gmail.com</a></p>
     </div>
-  </section>
+    <div class="contact-info-container">
+      <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
+      <p><a href="https://www.linkedin.com/in/samarth-rapatwar-677069303" target="_blank">linkedin.com/in/samarth-rapatwar-677069303</a></p>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form name="contact" method="POST" data-netlify="true" class="contact-form" onsubmit="handleFormSubmit(event)">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+  <button type="submit" class="btn btn-color-1">Send Message</button>
+
+  <p id="form-status" class="form-success" style="display: none;">✅ Message sent successfully!</p>
+</form>
+
+</section>
+
   <div class="arrow-container">
   <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#profile'" />
 </div>
@@ -211,5 +228,13 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <form name="contact" netlify hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <textarea name="message"></textarea>
+</form>
+
+
 </body>
 </html>
